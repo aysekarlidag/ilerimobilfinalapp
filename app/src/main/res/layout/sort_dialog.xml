@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_sheet_exit_linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:id="@+id/radioNameAsc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="İsme göre artan" />
+
+        <RadioButton
+            android:id="@+id/radioNameDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="İsme göre azalan" />
+
+        <RadioButton
+            android:id="@+id/radioIdAsc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="ID'ye göre artan" />
+
+        <RadioButton
+            android:id="@+id/radioIdDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID'ye göre azalan" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Vazgeç" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Tamam" />
+
+    </LinearLayout>
+
+</LinearLayout>
